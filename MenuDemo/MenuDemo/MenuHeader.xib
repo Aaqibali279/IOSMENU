@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuHeader" id="U6b-Vx-4bR" customClass="MenuHeader" customModule="MenuDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="To3-IC-O0T">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 28" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-Zg-aWS">
+                            <rect key="frame" x="25" y="19.5" width="39" height="39"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="yQn-Zg-aWS" secondAttribute="height" multiplier="1:1" id="nPz-Tq-j7I"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daniel Borrayo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-Np-Vg7">
+                            <rect key="frame" x="79" y="18" width="221" height="22.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans SemiBold" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500 Puntos disponibles" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBE-jX-WjH">
+                            <rect key="frame" x="79" y="45.5" width="155" height="16.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans SemiBold" pointSize="14"/>
+                            <color key="textColor" red="0.53725490200000003" green="0.5450980392" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GBE-jX-WjH" firstAttribute="leading" secondItem="yQn-Zg-aWS" secondAttribute="trailing" constant="15" id="B4x-pz-mEs"/>
+                        <constraint firstItem="ewB-Np-Vg7" firstAttribute="leading" secondItem="yQn-Zg-aWS" secondAttribute="trailing" constant="15" id="Dm5-EM-TVC"/>
+                        <constraint firstAttribute="trailing" secondItem="ewB-Np-Vg7" secondAttribute="trailing" constant="20" id="L2U-ct-1Ac"/>
+                        <constraint firstItem="yQn-Zg-aWS" firstAttribute="height" secondItem="To3-IC-O0T" secondAttribute="height" multiplier="1/2" id="f5W-lZ-XXy"/>
+                        <constraint firstItem="ewB-Np-Vg7" firstAttribute="centerY" secondItem="yQn-Zg-aWS" secondAttribute="centerY" constant="-10" id="hlq-mt-bRc"/>
+                        <constraint firstItem="GBE-jX-WjH" firstAttribute="top" secondItem="ewB-Np-Vg7" secondAttribute="bottom" constant="5" id="mhm-uZ-qqs"/>
+                        <constraint firstItem="yQn-Zg-aWS" firstAttribute="leading" secondItem="To3-IC-O0T" secondAttribute="leading" constant="25" id="mnE-NY-G0c"/>
+                        <constraint firstItem="yQn-Zg-aWS" firstAttribute="centerY" secondItem="To3-IC-O0T" secondAttribute="centerY" id="ye8-Pk-SlE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="To3-IC-O0T" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="0Tf-P4-R8A"/>
+                <constraint firstAttribute="trailing" secondItem="To3-IC-O0T" secondAttribute="trailing" id="7fs-nt-PA5"/>
+                <constraint firstItem="To3-IC-O0T" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Nu1-gB-xvh"/>
+                <constraint firstAttribute="bottom" secondItem="To3-IC-O0T" secondAttribute="bottom" id="zKj-95-ZaM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="iv" destination="yQn-Zg-aWS" id="AUH-rs-qh7"/>
+                <outlet property="nameLabel" destination="ewB-Np-Vg7" id="31V-q0-krn"/>
+                <outlet property="pointsLabel" destination="GBE-jX-WjH" id="97m-q1-exM"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="70.3125"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Mask Group 28" width="16" height="16"/>
+    </resources>
+</document>
