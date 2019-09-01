@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContainerController: UIViewController {
+class ContainerController: UIViewController,UIGestureRecognizerDelegate {
 
     // MARK: - Properties
     var currentViewController:UIViewController?
@@ -30,7 +30,28 @@ class ContainerController: UIViewController {
         view.backgroundColor = .white
         configureMenuController()
         configureNavigationController()
+        addGestures()
     }
+    
+    private func addGestures(){
+        let leftGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(leftSwipe))
+        leftGesture.edges = .left
+        view.addGestureRecognizer(leftGesture)
+
+    }
+    
+    @objc func leftSwipe(gesture:UIScreenEdgePanGestureRecognizer){
+        switch gesture.state {
+        case .began:
+            if !isOpen{
+                menuAction()
+            }
+        default:
+            break
+        }
+    }
+    
+    
     
     private func configureNavigationController(){
         view.insertSubview(nvc.view, at: 0)
